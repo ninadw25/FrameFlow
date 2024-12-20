@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Creator</title>
+    <link rel="stylesheet" href="/css/creator.css">
+</head>
+<body>
+    <%- include("includes/header.ejs") %>
+    
+    <div class="container">
+        <h1>Edit Creator Profile</h1>
+        <form action="/creators/<%= listing._id %>?_method=PUT" method="POST">
+            <label for="image">Profile Image URL</label>
+            <input type="text" id="image" name="image" value="<%= listing.image %>" required>
+
+            <label for="badges">Specialties/Tags (comma-separated)</label>
+            <input type="text" id="badges" name="badges" value="<%= listing.badges.join(', ') %>" required>
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" value="<%= listing.title %>" required>
+
+            <label for="author">Name of Photographer</label>
+            <input type="text" id="author" name="author" value="<%= listing.author %>" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" required><%= listing.description %></textarea>
+
+            <label for="standardPrice">Standard Price</label>
+            <input type="text" id="standardPrice" name="standardPrice" value="<%= listing.standard.price %>" required>
+
+            <label for="standardDescription">Package Description</label>
+            <textarea id="standardDescription" name="standardDescription" rows="4" required><%= listing.standard.description %></textarea>
+
+            <label for="standardFeatures">Features (comma-separated)</label>
+            <input type="text" id="standardFeatures" name="standardFeatures" value="<%= listing.standard.features.join(', ') %>" required>
+
+            <label for="standardDelivery">Delivery Time</label>
+            <input type="text" id="standardDelivery" name="standardDelivery" value="<%= listing.standard.delivery %>" required>
+
+            <label for="strengths">Your Strengths</label>
+            <textarea id="strengths" name="strengths" rows="4" required><%= listing.strengths %></textarea>
+
+            <button type="submit">Update Creator</button>
+        </form>
+
+        <form action="/creators/<%= listing._id %>?_method=DELETE" method="POST" style="margin-top: 20px;">
+            <button type="submit" style="background-color: red; color: white;">Delete Creator</button>
+        </form>
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>

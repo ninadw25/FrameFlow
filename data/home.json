@@ -1,0 +1,207 @@
+{
+    "navigation": {
+      "logo": "FRAMEFLOW",
+      "links": [
+        { "text": "Home", "url": "../home_pagr/main_page.html" },
+        { "text": "Explore", "url": "../Explore_page/explore.html" },
+        { "text": "About", "url": "../about_page/about.html" },
+        { "text": "Hire", "url": "../hire_page/hire.html" }
+      ]
+    },
+    "hero": {
+      "quote": "Hire The Best Photographers",
+      "title": "FrameFlow",
+      "categories": [
+        { "text": "Event Photography" },
+        { "text": "Commercial Photography" },
+        { "text": "Product Photography" },
+        { "text": "Wedding Photography" },
+        { "text": "Landscape Photography" },
+        { "text": "Branding Photography" },
+        { "text": "Portrait Photography" }
+      ]
+    },
+    "about": {
+      "title": "About",
+      "subtitle": "FRAME FLOW",
+      "image": "../../../assets/images/home/Frame 8.png",
+      "content": [
+        "FrameFlow is your gateway to stunning photography and tailored event coverage. Our platform connects you with a curated selection of talented photographers, each specializing in different styles—from weddings and corporate events to portraits and landscapes. With an easy-to-navigate portfolio, you can explore the work of various photographers, compare styles, and find the perfect match for your event.",
+        "Whether you're planning a grand celebration, an intimate gathering, or a professional photoshoot, FrameFlow makes it simple to hire the right photographer for your needs. Browse through featured collections, view detailed portfolios, and easily book a photographer directly through our platform. We're here to ensure that every moment of your event is captured with the artistry and precision it deserves."
+      ]
+    },
+    "communityWork": {
+      "title": "Explore the Community Work.",
+      "gallery": [
+        {
+          "name": "Arthur Levyn",
+          "date": "March 2022",
+          "image": "../../../assets/images/home/home_page_photographer.jpg",
+          "altText": "Bridge",
+          "profileButton": "View Profile →"
+        },
+        {
+          "name": "Tessia Erath",
+          "date": "January 2024",
+          "image": "../../../assets/images/home/home_page_pg3.jpg",
+          "altText": "Mountain",
+          "profileButton": "View Profile →"
+        },
+        {
+          "name": "Keczecs Indrath",
+          "date": "January 2023",
+          "image": "../../../assets/images/home/home_page_ph2.jpg",
+          "altText": "Stormy Mountains",
+          "profileButton": "View Profile →"
+        }
+      ]
+    },
+    "faq": {
+      "header": {
+        "title": "FAQ'S",
+        "subtitle": "Frequently Asked Questions"
+      },
+      "questions": [
+        {
+          "question": "What type of photography do you specialize in?",
+          "answer": "I specialize in Portrait, Landscape, Event, etc. photography, capturing moments that tell unique stories."
+        },
+        {
+          "question": "How can I book a photography session with you?",
+          "answer": "You can book a session through our website's booking form or by contacting us directly via email or phone."
+        },
+        {
+          "question": "What equipment do you use for your photography?",
+          "answer": "We use a range of professional equipment, including Nikon and Canon DSLRs, to ensure high-quality images."
+        },
+        {
+          "question": "Can I request a specific location for a session?",
+          "answer": "Yes, clients are welcome to request specific locations for their photo sessions, and we will do our best to accommodate."
+        },
+        {
+          "question": "What is your editing process like?",
+          "answer": "Our editing process involves color correction, retouching, and ensuring each photo reflects the natural beauty of the subject."
+        },
+        {
+          "question": "Are digital files included in your photography packages?",
+          "answer": "All our packages include digital files, which will be delivered via a secure online gallery."
+        },
+        {
+          "question": "Do you offer prints of your photographs?",
+          "answer": "Yes, prints are available for purchase. Explore the 'Prints' section for more details on sizes and pricing."
+        },
+        {
+          "question": "How long does it take to receive the edited photos after a session?",
+          "answer": "Typically, the turnaround time for receiving edited photos is 2-3 weeks, depending on the package selected."
+        }
+      ]
+    },
+    "testimonials": {
+      "header": {
+        "smallTitle": "TESTIMONIALS",
+        "mainTitle": "What Our Clients Say",
+        "totalReviews": 323
+      },
+      "items": [
+        {
+          "name": "Emily Johnson",
+          "location": "USA, California",
+          "review": "Had a great time having John for my wedding coverage had some great moments captured so beautifully.",
+          "rating": 5,
+          "socialLinks": [
+            {
+              "platform": "Facebook",
+              "url": "#",
+              "icon": "../../../assets/images/home/facebook.png"
+            },
+            {
+              "platform": "Twitter",
+              "url": "#",
+              "icon": "../../../assets/images/home/twitter.png"
+            },
+            {
+              "platform": "LinkedIn",
+              "url": "#",
+              "icon": "../../../assets/images/home/linkedin.png"
+            }
+          ]
+        },
+        {
+          "name": "John Smith",
+          "location": "USA, California",
+          "review": "Damien has an incredible talent for making every event feel effortless, and the results speak for themselves.",
+          "rating": 5,
+          "socialLinks": [
+            {
+              "platform": "Facebook",
+              "url": "#",
+              "icon": "../../../assets/images/home/facebook.png"
+            },
+            {
+              "platform": "Twitter",
+              "url": "#",
+              "icon": "../../../assets/images/home/twitter.png"
+            },
+            {
+              "platform": "LinkedIn",
+              "url": "#",
+              "icon": "../../../assets/images/home/linkedin.png"
+            }
+          ]
+        },
+        {
+          "name": "Samantha Davis",
+          "location": "USA, California",
+          "review": "I was blown away by Arthur's ability to capture the essence of our wedding day. His photographs are our cherished memories. Great work frameflow.",
+          "rating": 5,
+          "socialLinks": [
+            {
+              "platform": "Facebook",
+              "url": "#",
+              "icon": "../../../assets/images/home/facebook.png"
+            },
+            {
+              "platform": "Twitter",
+              "url": "#",
+              "icon": "../../../assets/images/home/twitter.png"
+            },
+            {
+              "platform": "LinkedIn",
+              "url": "#",
+              "icon": "../../../assets/images/home/linkedin.png"
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "menu": [
+        "EVENT PHOTOGRAPHY",
+        "COMMERCIAL PHOTOGRAPHY", 
+        "PRODUCT PHOTOGRAPHY",
+        "WEDDING PHOTOGRAPHY",
+        "LANDSCAPE PHOTOGRAPHY",
+        "BRANDING PHOTOGRAPHY",
+        "PORTRAIT PHOTOGRAPHY"
+      ],
+      "links": {
+        "home": {
+          "title": "HOME",
+          "items": ["Explore", "About", "FAQs", "Testimonials"]
+        },
+        "explore": {
+          "title": "EXPLORE",
+          "items": ["Photo Gallery", "Top Rated Photographers"]
+        },
+        "about": {
+          "title": "ABOUT US",
+          "items": ["Portraits", "Events", "Commercial"]
+        }
+      },
+      "socialIcons": [
+        { "platform": "Facebook", "icon": "../../../assets/images/home/facebook.png" },
+        { "platform": "Twitter", "icon": "../../../assets/images/home/twitter.png" },
+        { "platform": "LinkedIn", "icon": "../../../assets/images/home/linkedin.png" }
+      ]
+    }
+  }

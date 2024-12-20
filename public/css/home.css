@@ -1,0 +1,530 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #151515;
+}
+
+.navbar h1 {
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.hero {
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    align-items: center; /* Center-aligns all child elements */
+    justify-content: center; /* Centers content vertically within the hero section */
+    text-align: center; /* Centers text */
+    padding: 20px; /* Adds padding around the content */
+    width: 100%; /* Ensures the hero section takes full width */
+}
+.title-area {
+    width: 100%; /* Ensures the title area takes full width of its container */
+}
+/* Style adjustments for responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Keeps vertical stacking on small screens */
+    }
+
+    .hero img {
+        order: 2; /* Puts the image below the text on smaller screens */
+    }
+
+    .title-area {
+        order: 1; /* Ensures text is above the image on smaller screens */
+    }
+}        
+
+
+.title-area .quote {
+    font-size: 1.2rem; /* Adjusts the subtitle size */
+    color: #ccc; /* Lighter color for the subtitle */
+    margin-bottom: 15px; /* Space below the subtitle */
+}
+.title-area h2 {
+    font-size: 2.5rem; /* Scaled size for better visual impact */
+    color: #fff; /* Ensures the title is white */
+}
+.title-area .category-links {
+    padding: 20px 0;
+}
+
+.title-area .category-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.title-area .category-links span {
+    color: #6200EA; /* Purple star color */
+}
+
+.book-button {
+    font-size: 1.2rem; /* Increases the font size */
+    padding: 12px 25px; /* More padding for a bigger button */
+    margin-top: 20px; /* Adds space above the button */
+    background-color: #ff6347; /* More visible color */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+.book-button:hover {
+    background-color: #ee5a46; /* Darker shade on hover */
+}
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.category {
+    text-align: center;
+    margin: 10px;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+}
+
+.category h3 {
+    font-size: 18px;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+}
+
+.community-work {
+    background-color: #0e0d0d;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    
+}
+
+.community-work h2 {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.community-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.community-gallery .photo {
+    width: 30%;
+ 
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    padding: 10px;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community-gallery .photo img {
+    width: 100%;  /* Ensures all images are the same size */
+    height: 25rem;
+    object-fit: cover;
+}
+
+.community-gallery .photo .info {
+    text-align: center;
+}
+
+.community-gallery .photo p {
+    font-size: 16px;
+    color: #aaa;
+}
+
+.community-gallery .photo span {
+    font-size: 12px;
+    color: #888;
+}
+
+.community-gallery button {
+    background-color: #6200EA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.community-gallery button:hover {
+    background-color: #7e67f8;
+}
+
+.view-all {
+    color: #7e67f8;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+.about-frame-flow {
+    background-color: #030303; /* Dark background for contrast */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.about-frame-flow h2,
+.about-frame-flow h3 {
+    margin: 10px 0;
+}
+
+.about-frame-flow .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.about-frame-flow .about-content img {
+    width: 40%; /* Adjust the size as needed */
+    height: auto;
+    padding: 10px;
+}
+
+.about-frame-flow .about-text {
+    width: 50%;
+    padding: 10px;
+}
+
+.about-frame-flow .about-text p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-frame-flow button {
+    background: linear-gradient(to bottom, #585858 0%, #2c2c2c 100%);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px; /* Creates a pill shape */
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase; /* Makes the text uppercase */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.about-frame-flow button:hover {
+    background: linear-gradient(to bottom, #707070 0%, #404040 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Enhances shadow on hover */
+}
+
+.faq-section {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.faq-header h4 {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.faq-header h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.faq-content {
+    display: flex;
+    justify-content: space-between; /* Ensures columns are spaced evenly */
+    gap: 20px; /* Adds some space between the two columns */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows wrapping in case of smaller screens */
+}
+
+.faq-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack items vertically within each column */
+    gap: 10px; /* Space between each FAQ item */
+    min-width: 250px; /* Minimum width for responsive behavior */
+}
+
+details {
+    background-color: #302f2f;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+summary {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+    .faq-content {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+
+    .faq-column {
+        width: 100%; /* Take full width on small screens */
+    }
+}
+
+.testimonials-section {
+    background-color: #222;
+    color: white;
+    padding: 40px;
+    text-align: left;
+}
+
+.testimonials-section h6 {
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.testimonials-section h1 {
+    text-align: left;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.total-reviews {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.view-all-testimonials {
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.testimonial {
+    background-color: #333;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative; /* Position relative to place social links inside the testimonial */
+}
+
+.testimonial .name,
+.testimonial .location {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.testimonial .review {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.rating .star {
+    color: #ffd700; /* Gold color for stars */
+    margin-right: 2px;
+}
+
+.social-links {
+    position: absolute; /* Position the social links inside the testimonial card */
+    right: 20px; /* Adjust this value to control the distance from the right */
+    top: 40px; /* Adjust this value to control the distance from the bottom */
+}
+
+.social-links a {
+    margin-right: 10px;
+    display: inline-block; /* Ensure the icons are aligned properly */
+}
+
+.social-links img {
+    width: 20px; /* Set according to your icon size */
+    height: auto;
+}
+
+/* Add hover effects for social links if needed */
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+/* Photography Menu Section */
+.photography-menu {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    color: #ddd;
+    margin: 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.star-separator {
+    color: #ffd700; /* Gold color for stars */
+    margin: 0 5px; /* Adjust for space between stars and menu items */
+}
+.footer {
+    background-color: #121212; /* Dark background */
+    padding: 60px 20px; /* Increased padding for more space */
+    text-align: center; /* Center text */
+    border-top: 1px solid #444; /* Top border */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* More space between columns */
+    align-items: flex-start; /* Align items at the start */
+    flex-wrap: wrap; /* Wrap in smaller screens */
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto 60px; /* Center content and add space below */
+}
+
+.book-now {
+    flex: 1; /* Take more space */
+    max-width: 400px; /* Increase width for the book now section */
+    margin-bottom: 60px; /* Increased space below */
+}
+
+.book-now .highlight-text {
+    font-size: 18px; /* Larger text */
+    color: #888; /* Gray text */
+    margin-bottom: 30px; /* More space below text */
+}
+
+.book-button {
+    background-color: #6a0dad; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 20px 40px; /* Increased padding for larger button */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 24px; /* Larger font size */
+    border-radius: 40px; /* More rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.book-button:hover {
+    background-color: #8a2be2; /* Slightly lighter purple on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
+  footer p {
+    margin-top: 1.5em;
+    color: #666;
+  }
+

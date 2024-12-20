@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Creator</title>
+    <link rel="stylesheet" href="/css/creator.css">
+</head>
+<body>
+    <%- include("includes/header.ejs") %>
+    
+    <div class="container">
+        <h1>Add New Creator</h1>
+        <form action="/creators" method="POST">
+            <label for="image">Profile Image URL</label>
+            <input type="text" id="image" name="image" required>
+
+            <label for="badges">Specialties/Tags (comma-separated)</label>
+            <input type="text" id="badges" name="badges" required>
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+           
+            <label for="author">Name</label>
+            <input type="author" id="author" name="author" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="standardPrice">Standard Price</label>
+            <input type="text" id="standardPrice" name="standardPrice" required>
+
+            <label for="standardDescription">Package Description</label>
+            <textarea id="standardDescription" name="standardDescription" rows="4" required></textarea>
+
+            <label for="standardFeatures">Features (comma-separated)</label>
+            <input type="text" id="standardFeatures" name="standardFeatures" required>
+
+            <label for="standardDelivery">Delivery Time</label>
+            <input type="text" id="standardDelivery" name="standardDelivery" required>
+
+            <label for="strengths">Your Strengths</label>
+            <textarea id="strengths" name="strengths" rows="4" required></textarea>
+
+            <button type="submit">Add Creator</button>
+        </form>
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>

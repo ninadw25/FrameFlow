@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Flow - Hire Creators</title>
+    <link rel="stylesheet" href="/css/hire.css">
+</head>
+<body>
+    <%- include("includes/header.ejs") %>
+
+    <section class="main-content">
+        <h2>EXPLORE OUR CREATORS</h2>
+      
+        <a href="/creators/new" class="add-creator-btn">Join as a Creator</a>
+        <br><br><br>
+        <div class="cards-container">
+            <% listings.forEach(card => { %>
+                <div class="card">
+                    <img src="<%= card.image %>" alt="Creator Image">
+                    <div class="card-content">
+                        <% card.badges.forEach(badge => { %>
+                            <span class="badge"><%= badge %></span>
+                        <% }); %>
+                        <h3><%= card.title %></h3>
+                        <div class="rating">
+                            <span>⭐ <%= card.rating %></span>
+                            <span>(<%= card.reviews %>)</span>
+                            <span>🕒 <%= card.duration %></span>
+                        </div>
+                        <br>
+                        <p>by <%= card.author %></p>
+                        <p class="description"><%= card.description %></p>
+                        <p class="price"><%= card.price %></p>
+                        
+                        <div class="card-actions">
+                            <a href="/portfolio?id=<%= card._id %>" class="hire-button">Hire</a>
+                            <a href="/creators/<%= card._id %>/edit" class="edit-button">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>

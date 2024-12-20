@@ -1,0 +1,249 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial,sans-serif;
+    background-color: #0b0b0b;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #151515;
+}
+
+.navbar h1 {
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* About Us Section */
+.about-us {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-us h2 {
+    font-size: 46px;
+    margin-bottom: 40px;
+}
+
+.about-us p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+
+/* .image-gallery img {
+    width: 1000px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+} */
+
+/* Vision Section */
+/* Section styling */
+.vision {
+    background-color: #0b0b0b; /* Light background color */
+    padding: 40px;
+}
+
+/* Flexbox layout for vision content */
+.vision-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Vision text styling on the left 55% */
+.vision-text {
+    width: 55%; /* Occupies the left 55% */
+    padding-right: 20px; /* Optional space between text and image */
+}
+
+/* Image on the right 45% */
+.vision-image {
+    width: 45%; /* Occupies the right 45% */
+    display: flex;
+    justify-content: center;
+}
+
+.vision-image img {
+    max-width: 100%; /* Make sure the image scales correctly */
+    height: 400px;
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+
+/* Headings styling */
+.vision h2, .vision h3, .vision h4 {
+    margin-bottom: 15px;
+    font-size: larger;
+}
+
+.vision p {
+    margin-bottom: 4%;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .vision-content {
+        flex-direction: column;
+    }
+
+    .vision-text, .vision-image {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .vision-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* CONNECT SECTION */
+/* Section styling */
+.connect-section {
+    background-color: #0b0b0b; /* Light background color */
+    padding: 40px;
+    text-align: left;
+    margin-left: 120px;
+}
+
+/* Header styling */
+.connect-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left; /* Align header to the left */
+}
+
+
+/* Flexbox layout for the content */
+.connect-content {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start; /* Align items to the top */
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+/* Text on the left side */
+.connect-text {
+    width: 60%; /* Take the left 50% */
+    padding-right: 20px;
+    font-size: larger;
+    margin-bottom: 35px; 
+}
+
+.connect-text p2{
+    font-size: xx-large;
+    margin-bottom: 35px; 
+}
+
+/* Social media icons on the right side */
+.social-icons {
+    width: 25%; /* Take the right 50% */
+    display: flex;
+    justify-content: flex-end; /* Ensure icons are spaced from midpoint */
+    padding-left: 20px; /* Optional padding to give extra space */
+}
+
+/* Circle icons */
+.circle-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit:cover;
+    margin-left: 20px; /* Space between icons */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for icons */
+.circle-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Adjust for mobile */
+@media (max-width: 768px) {
+    .connect-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .connect-text {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
+  footer p {
+    margin-top: 1.5em;
+    color: #666;
+  }
+

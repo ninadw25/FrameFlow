@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+    <!-- Header part -->
+    <%- include("includes/header.ejs") %>
+
+    <% if (portfolio) { %>
+        <!-- Profile and Pricing Section -->
+        <section class="profile-pricing-container">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <img src="<%= portfolio.image %>" alt="Photographer" class="profile-img">
+                <br>
+                <h2><%= portfolio.title || 'BRANDON MATHWES' %></h2>
+            </div>
+
+            <!-- Pricing Section -->
+            <div class="pricing-container">
+                <div class="pricing-tabs">
+                    <button class="tab-button" onclick="showPricing('standard')">Standard</button>
+                </div>
+                
+                <div id="pricingContent">
+                    <h3>Standard Package - $<%= portfolio.standard.price %></h3>
+                    <br>
+                    <br>
+
+                    <p><%= portfolio.standard.description %></p>
+                    <ul><br>
+                        <% portfolio.standard.features.forEach(function(feature) { %>
+                            <li><%= feature %></li>
+                        <% }); %>
+                    </ul><br>
+                    <p>Delivery: <%= portfolio.standard.delivery %></p>
+                </div>
+                <button class="contact-button">Continue</button>
+            </div>
+        </section>
+
+
+        <!-- Strengths Section -->
+        <section class="strengths-section">
+            <h2>My Strengths</h2>
+            <br>
+            <br>
+            <ul>
+                <% portfolio.strengths.split(',').forEach(function(strength) { %>
+                    <li><%= strength.trim() %></li>
+                <% }); %>
+            </ul>
+        </section>
+    <% } else { %>
+        <section class="no-portfolio">
+            <h2>Portfolio Not Available</h2>
+            <p>We're sorry, but the portfolio information could not be found.</p>
+        </section>
+    <% } %>
+    
+
+    <script>
+        function showPricing(type) {
+            // Simple function to show pricing (you can expand this)
+            console.log(`Showing ${type} pricing`);
+        }
+    </script>
+    <%- include("includes/footer.ejs") %>
+</body>
+</html>

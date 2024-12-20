@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Flow</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <%- include("includes/header.ejs") %>
+<br>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="title-area">
+                <p class="quote">Hire The Best Photographers</p>
+                <h2>FrameFlow</h2>
+                <div class="category-links">
+                    <!-- Categories will be populated by JavaScript -->
+                </div>
+            </div>
+            <button class="book-button">
+                <a href="/hire">Book Right Now!</a>
+                <i class="arrow-icon">&#10142;</i>
+            </button>
+        </section>
+
+        <section class="categories">
+            <!-- Example category with image -->
+            <div class="category">
+                <img src="assets/images/home/Screenshot 2024-09-11 160229.png" alt="Event Photography">
+                <h3>Event Photography</h3>
+            </div>
+            <!-- Add additional categories with images as necessary -->
+        </section>
+
+        <!-- About Section -->
+        <section class="about-frame-flow">
+            <div class="about-content">
+                <!-- About content will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Community Work Section -->
+        <section class="community-work">
+            <div class="community-gallery" id="communityGallery"></div>
+            <a href="#" class="view-all">View All Works →</a>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div id="faqHeader" class="faq-header"></div>
+            <div id="faqContent" class="faq-content"></div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonialsSection"></section>
+
+        <!-- Footer -->
+    </main>
+
+    <!-- Footer part -->
+    <%- include("includes/footer.ejs") %>
+
+    <!-- Load JSON data first, then main JavaScript -->
+    <script>
+        // Attach the JSON data to the window object
+        window.frameflowData = <%- JSON.stringify(frameflowData) %>;
+    </script>
+    <script src="/js/home.js"></script>
+</body>
+</html>
+<!-- ```
+
+The key changes are:
+
+1. Created a `HomeDataManager` class that encapsulates all the rendering logic
+2. Added a static `load()` method to instantiate the class
+3. Made the rendering methods part of the class
+4. In the EJS template, added a script to attach the JSON data to the `window` object
+5. Replaced the previous `home.js` with `HomeDataManager.js`
+
+On the server-side (likely in your Express route), you'll need to pass the JSON data to the template. Here's an example of how that might look:
+
+```javascript
+router.get('/', (req, res) => {
+    // Load your JSON data 
+    const frameflowData = require('./path/to/frameflow-data.json');
+    
+    // Pass the data to the template
+    res.render('home', { frameflowData });
+});
+```
+
+This approach offers several benefits:
+- Encapsulates all rendering logic within a single class
+- Uses OOP principles
+- Removes the need for `fetch()`
+- Passes data directly from the server to the client
+- Keeps the code modular and easy to maintain
+
+Would you like me to elaborate on any part of the implementation? -->

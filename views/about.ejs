@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameFlow - About Us</title>
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+    <%- include("includes/header.ejs") %>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2></h2>
+        <p></p>
+        <div class="image-gallery">
+            <img src="assets/images/about/Screenshot 2024-09-27 223237.png">
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision">
+        <div class="vision-content">
+            <div class="vision-text">
+                <h2></h2>
+                <p></p>
+                <h3></h3>
+                <p></p>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div class="vision-image">
+                <img src="assets/images/about/HOMEPIC.png" alt="Our Vision">
+            </div>
+        </div>
+    </section>
+
+    <section class="connect-section">
+        <h2></h2>
+        <div class="connect-content">
+            <div class="connect-text">
+                <p></p>
+                <br>
+                <p2></p2>
+            </div>
+            <div class="social-icons">
+                <!-- Social icons will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <%- include("includes/footer.ejs") %>
+    
+    <script>
+        // Attach the JSON data to the window object
+        window.aboutPageData = <%- JSON.stringify(aboutPageData) %>;
+    </script>
+    <script src="/js/about.js"></script>
+</body>
+</html>
+```
+<!-- 
+4. Update your Express route in `index.js`:
+
+```javascript
+app.get("/about", (req, res) => {
+    try {
+        // Read the JSON file directly
+        const jsonPath = path.join(__dirname, '/data/about-data.json');
+        const aboutPageData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+        
+        // Pass the data to the template
+        res.render('about', { aboutPageData });
+    } catch (error) {
+        console.error('Error loading About page JSON data:', error);
+        res.status(500).send('Error loading about page data');
+    }
+});
+```
+
+Key changes:
+1. Created a separate JSON file for all text content
+2. Developed a JavaScript class to dynamically render the content
+3. Modified the EJS template to have placeholders for dynamic content
+4. Updated the route to read and pass the JSON data
+
+The benefits of this approach:
+- Separates content from presentation
+- Makes content easily editable
+- Allows for dynamic rendering
+- Keeps the page structure clean
+
+Would you like me to explain or modify anything about this implementation? -->

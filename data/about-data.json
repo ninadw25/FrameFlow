@@ -1,0 +1,40 @@
+{
+    "aboutUs": {
+        "title": "About Us",
+        "description": "Welcome to our platform, a dedicated space designed exclusively for photographers to showcase their unique talents and connect with clients who appreciate their craft. Whether you're an emerging artist or an established professional, our platform gives you the opportunity to present your portfolio to a wider audience, find new projects, and grow your career. For clients, we provide an easy-to-navigate space to discover and hire photographers who match their vision, ensuring that each project is backed by creativity, professionalism, and passion. Here, creativity meets opportunity, and every photograph tells a story waiting to be captured."
+    },
+    "vision": {
+        "title": "OUR VISION",
+        "visionDescription": "Our vision is to create a dynamic platform where photographers can effortlessly showcase their artistry, connect with potential clients, and turn their passion into thriving careers. We aim to be the go-to hub for photography talent, where creativity meets opportunity, enabling both emerging and established photographers to shine and grow in a competitive market.",
+        "workflow": {
+            "title": "WORKFLOW",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit itaque officiis, quisquam natus doloribus blanditiis. Eaque, dolorem iure modi fugit eos obcaecati est, hic totam sunt quo cumque error eligendi."
+        },
+        "values": {
+            "title": "VALUES",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At corrupti, aut incidunt quae provident ipsum ab alias nemo? In ipsum autem nemo ab laborum aliquid reprehenderit eius. Deleniti, saepe nam."
+        }
+    },
+    "connect": {
+        "title": "Connect With Us",
+        "description": "We'd love to stay connected! Follow us on social media for the latest updates, behind-the-scenes content, and more.",
+        "brandName": "FRAMEFLOW",
+        "socialLinks": [
+            {
+                "platform": "Facebook",
+                "url": "https://www.instagram.com/priyanshsingh7322/?utm_source=ig_web_button_share_sheet",
+                "iconPath": "assets/images/about/facebook.png"
+            },
+            {
+                "platform": "Instagram",
+                "url": "https://www.instagram.com/ninadw25/?utm_source=ig_web_button_share_sheet",
+                "iconPath": "assets/images/about/download.jpg"
+            },
+            {
+                "platform": "LinkedIn",
+                "url": "https://www.instagram.com/pseudo_v/",
+                "iconPath": "assets/images/about/linkedin.png"
+            }
+        ]
+    }
+}
